@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "java-p3",
+  "index": 3,
+  "title": "ابزارهای حرفه‌ای",
+  "summary": "کالکشن‌ها، جنریک‌ها، استثناها، تست و ابزارهای روزمره‌ی یک توسعه‌دهنده.",
+  "icon": "wrench.and.screwdriver",
+  "lessons": [
+    { "id": "java-w11", "number": 11, "title": "آرایه‌ها و رشته‌ها" },
+    { "id": "java-w12", "number": 12, "title": "کالکشن‌ها: List و Set و Map" },
+    { "id": "java-w13", "number": 13, "title": "جنریک‌ها" },
+    { "id": "java-w14", "number": 14, "title": "استثناها و مدیریت خطا" },
+    { "id": "java-w15", "number": 15, "title": "لامبدا و Stream API" },
+    { "id": "java-w16", "number": 16, "title": "تست‌نویسی با JUnit" }
+  ]
+}

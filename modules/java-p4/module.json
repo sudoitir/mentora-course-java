@@ -1,0 +1,14 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "java-p4",
+  "index": 4,
+  "title": "پایگاه‌داده و SQL",
+  "summary": "ذخیره‌سازی داده‌ها: پایگاه‌داده‌های رابطه‌ای، SQL و اتصال جاوا به داده.",
+  "icon": "cylinder.split.1x2",
+  "lessons": [
+    { "id": "java-w17", "number": 17, "title": "مبانی پایگاه‌داده‌ی رابطه‌ای" },
+    { "id": "java-w18", "number": 18, "title": "SQL: کوئری‌نویسی" },
+    { "id": "java-w19", "number": 19, "title": "JDBC: اتصال جاوا به داده" },
+    { "id": "java-w20", "number": 20, "title": "طراحی داده و پروژه‌ی پایگاه‌داده" }
+  ]
+}

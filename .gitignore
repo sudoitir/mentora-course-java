@@ -1,0 +1,13 @@
+# macOS
+.DS_Store
+
+# Editors
+.vscode/
+.idea/
+
+# Build / pack artifacts
+*.zip
+/dist/
+
+# Integrity manifest is generated at pack/publish time
+# (keep course.json checked in; generated files[] lives in the packed artifact)

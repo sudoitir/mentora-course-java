@@ -1,0 +1,22 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "java-p5",
+  "index": 5,
+  "title": "اسپرینگ بوت",
+  "summary": "ساخت سرویس‌ها و APIهای واقعی با اسپرینگ بوت ۴ و اکوسیستم آن.",
+  "icon": "leaf",
+  "lessons": [
+    { "id": "java-w21", "number": 21, "title": "آشنایی با اسپرینگ بوت و تزریق وابستگی" },
+    { "id": "java-w22", "number": 22, "title": "ساخت نخستین REST API" },
+    { "id": "java-w23", "number": 23, "title": "کنترلرها و مسیر‌دهی" },
+    { "id": "java-w24", "number": 24, "title": "لایه‌ی سرویس و منطق کسب‌وکار" },
+    { "id": "java-w25", "number": 25, "title": "Spring Data JPA" },
+    { "id": "java-w26", "number": 26, "title": "اعتبارسنجی و مدیریت خطا" },
+    { "id": "java-w27", "number": 27, "title": "احراز هویت و امنیت" },
+    { "id": "java-w28", "number": 28, "title": "تست در اسپرینگ بوت" },
+    { "id": "java-w29", "number": 29, "title": "پیکربندی و پروفایل‌ها" },
+    { "id": "java-w30", "number": 30, "title": "ثبت لاگ و پایش" },
+    { "id": "java-w31", "number": 31, "title": "مستندسازی و نسخه‌بندی API" },
+    { "id": "java-w32", "number": 32, "title": "استقرار و کانتینری‌سازی" }
+  ]
+}

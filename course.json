@@ -1,0 +1,21 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "mentora.java",
+  "version": "1.0.0",
+  "title": "جاوا از صفر تا استخدام",
+  "summary": "مسیری پروژه‌محور برای یادگیری جاوا، از مبانی تا توسعه‌ی حرفه‌ای با اسپرینگ بوت.",
+  "locale": "fa",
+  "readingDirection": "rtl",
+  "minAppVersion": "1.0.0",
+  "license": "CC-BY-NC-SA-4.0",
+  "tags": ["java", "spring-boot", "backend", "persian"],
+  "categories": ["programming"],
+  "author": { "id": "mentora", "name": "Mentora" },
+  "cover": "assets/images/cover.png",
+  "modules": ["java-p1", "java-p2", "java-p3", "java-p4", "java-p5", "java-p6"],
+  "dependencies": [],
+  "update": {
+    "channel": "stable",
+    "source": { "kind": "git", "url": "https://github.com/sudoit/mentora-course-java", "private": true }
+  }
+}

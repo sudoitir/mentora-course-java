@@ -1,0 +1,8 @@
+{
+  "schemaVersion": "1.0.0",
+  "locale": "en",
+  "strings": {
+    "course.title": "Java: Zero to Hired",
+    "course.summary": "A project-based path to learn Java, from fundamentals to professional development with Spring Boot."
+  }
+}

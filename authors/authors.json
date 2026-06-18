@@ -1,0 +1,11 @@
+{
+  "schemaVersion": "1.0.0",
+  "authors": [
+    {
+      "id": "mentora",
+      "name": "Mentora",
+      "url": "https://github.com/sudoit",
+      "bio": { "fa": "تیم منتورا — یادگیری مهندسی به سبک یک منتور درجه‌یک.", "en": "The Mentora team — engineering learning, mentor-style." }
+    }
+  ]
+}

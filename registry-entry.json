@@ -1,0 +1,19 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "mentora.java",
+  "title": { "fa": "جاوا از صفر تا استخدام", "en": "Java: Zero to Hired" },
+  "summary": { "fa": "مسیر پروژه‌محور ۴۰ هفته‌ای، فارسی و RTL.", "en": "A 40-week, project-based Persian (RTL) path." },
+  "version": "1.0.0",
+  "locale": "fa",
+  "categories": ["programming"],
+  "tags": ["java", "spring-boot", "backend", "persian"],
+  "author": { "id": "mentora", "name": "Mentora" },
+  "minAppVersion": "1.0.0",
+  "download": {
+    "kind": "git",
+    "url": "https://github.com/sudoit/mentora-course-java",
+    "ref": "v1.0.0",
+    "private": true
+  },
+  "dependencies": []
+}

@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "java-p2",
+  "index": 2,
+  "title": "شیء‌گرایی",
+  "summary": "کلاس‌ها، اشیاء، وراثت و چندریختی؛ قلب برنامه‌نویسی شیء‌گرا در جاوا.",
+  "icon": "cube",
+  "lessons": [
+    { "id": "java-w05", "number": 5, "title": "متدها و شکستن مسئله" },
+    { "id": "java-w06", "number": 6, "title": "کلاس‌ها و اشیاء" },
+    { "id": "java-w07", "number": 7, "title": "کپسوله‌سازی و سازنده‌ها" },
+    { "id": "java-w08", "number": 8, "title": "وراثت" },
+    { "id": "java-w09", "number": 9, "title": "چندریختی و کلاس‌های انتزاعی" },
+    { "id": "java-w10", "number": 10, "title": "اینترفیس‌ها" }
+  ]
+}
