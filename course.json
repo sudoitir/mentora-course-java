@@ -16,6 +16,6 @@
   "dependencies": [],
   "update": {
     "channel": "stable",
-    "source": { "kind": "git", "url": "https://github.com/sudoitir/mentora-course-java", "private": true }
+    "source": { "kind": "git", "url": "https://github.com/sudoitir/mentora-course-java", "private": false }
   }
 }
