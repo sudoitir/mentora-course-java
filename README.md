@@ -2,14 +2,14 @@
 
 > A Persian (RTL), project-based path from zero to junior Java developer over **40 weeks / 6 phases**.
 > This repository is a **Mentora course package** — a portable bundle of JSON the
-> [Mentora](https://github.com/sudoit/Mentora) app installs and renders **offline**.
+> [Mentora](https://github.com/sudoitir/Mentora) app installs and renders **offline**.
 
 ## What this is
 
 A course in Mentora is a directory of JSON conforming to the **Mentora course-package format**
 (`schemaVersion` 1.0.0). The app can install it from a local folder, a `.zip`, a git repo (public **or
 private**), or a registry — and renders it fully offline once cached. See the format spec in the Mentora
-repo: [`docs/COURSE_ECOSYSTEM.md`](https://github.com/sudoit/Mentora/blob/master/docs/COURSE_ECOSYSTEM.md).
+repo: [`docs/COURSE_ECOSYSTEM.md`](https://github.com/sudoitir/Mentora/blob/master/docs/COURSE_ECOSYSTEM.md).
 
 ## Layout
 
@@ -34,12 +34,12 @@ assets/                     # images / diagrams / pdf / video (referenced by les
 Content is generated/edited with the **`course-author`** skill that lives in the Mentora repo
 (`.claude/skills/course-author/SKILL.md`) — a world-class-mentor guide that emits schema-valid lesson JSON.
 Each `lessons/<id>.json` must satisfy the `WeekValidator` rules documented in
-[`CONTENT_SCHEMA.md`](https://github.com/sudoit/Mentora/blob/master/CONTENT_SCHEMA.md).
+[`CONTENT_SCHEMA.md`](https://github.com/sudoitir/Mentora/blob/master/CONTENT_SCHEMA.md).
 
 ## Installing into Mentora
 
 In Mentora → **Add Course**, choose a source:
-- **Git URL** — `https://github.com/sudoit/mentora-course-java` (for a **private** repo, paste a token;
+- **Git URL** — `https://github.com/sudoitir/mentora-course-java` (for a **private** repo, paste a token;
   it is stored in the system Keychain, never on disk).
 - **Local folder** — point at a clone of this repo.
 - **Zip** — a zipped export of this repo.

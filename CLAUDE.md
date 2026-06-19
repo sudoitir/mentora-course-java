@@ -2,7 +2,7 @@
 
 > Source of truth for anyone (human or agent) working on this **Mentora course package**.
 > This repo holds **course content only** — no app code. The app lives in the
-> [Mentora](https://github.com/sudoit/Mentora) repo.
+> [Mentora](https://github.com/sudoitir/Mentora) repo.
 
 ## What this is
 
@@ -16,9 +16,9 @@ local folder, `.zip`, git repo (public **or private**), or registry, and renders
 This repo and the app repo evolve together:
 
 - **Format / schema source of truth:** the **Mentora** repo —
-  [`docs/COURSE_ECOSYSTEM.md`](https://github.com/sudoit/Mentora/blob/master/docs/COURSE_ECOSYSTEM.md)
+  [`docs/COURSE_ECOSYSTEM.md`](https://github.com/sudoitir/Mentora/blob/master/docs/COURSE_ECOSYSTEM.md)
   (package format, directory layout, all JSON Schemas) and
-  [`CONTENT_SCHEMA.md`](https://github.com/sudoit/Mentora/blob/master/CONTENT_SCHEMA.md) (the lesson/`Week`
+  [`CONTENT_SCHEMA.md`](https://github.com/sudoitir/Mentora/blob/master/CONTENT_SCHEMA.md) (the lesson/`Week`
   field contract + `WeekValidator` counts).
 - **Authoring tool:** the **`course-author`** skill in the Mentora repo
   (`.claude/skills/course-author/SKILL.md`) — the world-class-mentor generator that emits the lesson JSON in

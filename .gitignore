@@ -8,6 +8,8 @@
 # Build / pack artifacts
 *.zip
 /dist/
+old-contents/
+prompts/
 
 # Integrity manifest is generated at pack/publish time
 # (keep course.json checked in; generated files[] lives in the packed artifact)
