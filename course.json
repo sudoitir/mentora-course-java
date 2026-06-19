@@ -12,6 +12,15 @@
   "categories": ["programming"],
   "author": { "id": "mentora", "name": "Mentora" },
   "cover": "assets/images/cover.png",
+  "fonts": {
+    "contentFamily": "Vazirmatn",
+    "files": [
+      "fonts/Vazirmatn-Regular.ttf",
+      "fonts/Vazirmatn-Medium.ttf",
+      "fonts/Vazirmatn-SemiBold.ttf",
+      "fonts/Vazirmatn-Bold.ttf"
+    ]
+  },
   "modules": ["java-p1", "java-p2", "java-p3", "java-p4", "java-p5", "java-p6"],
   "dependencies": [],
   "update": {
