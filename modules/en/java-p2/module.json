@@ -1,0 +1,40 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "java-p2",
+  "index": 2,
+  "title": "Object-Oriented Programming",
+  "summary": "Classes, objects, inheritance, and polymorphism: the heart of object-oriented Java.",
+  "icon": "cube",
+  "lessons": [
+    {
+      "id": "java-w05",
+      "number": 5,
+      "title": "Methods and Breaking Problems Apart"
+    },
+    {
+      "id": "java-w06",
+      "number": 6,
+      "title": "Classes and Objects"
+    },
+    {
+      "id": "java-w07",
+      "number": 7,
+      "title": "Encapsulation and Constructors"
+    },
+    {
+      "id": "java-w08",
+      "number": 8,
+      "title": "Inheritance"
+    },
+    {
+      "id": "java-w09",
+      "number": 9,
+      "title": "Polymorphism and Abstract Classes"
+    },
+    {
+      "id": "java-w10",
+      "number": 10,
+      "title": "Interfaces"
+    }
+  ]
+}

@@ -1,18 +1,30 @@
 {
-  "schemaVersion": "1.0.0",
+  "schemaVersion": "1.1.0",
   "id": "mentora.java",
   "version": "1.0.0",
-  "title": "جاوا از صفر تا استخدام",
-  "summary": "مسیری پروژه‌محور برای یادگیری جاوا، از مبانی تا توسعه‌ی حرفه‌ای با اسپرینگ بوت.",
-  "locale": "fa",
-  "readingDirection": "rtl",
   "minAppVersion": "1.0.0",
   "license": "CC-BY-NC-SA-4.0",
-  "tags": ["java", "spring-boot", "backend", "persian"],
-  "categories": ["programming"],
-  "author": { "id": "mentora", "name": "Mentora" },
+  "tags": [
+    "java",
+    "spring-boot",
+    "backend",
+    "persian"
+  ],
+  "categories": [
+    "programming"
+  ],
+  "author": {
+    "id": "mentora",
+    "name": "Mentora"
+  },
   "cover": "assets/images/cover.png",
-  "capabilities": ["hasCode", "hasVersions", "hasInterview", "hasProject", "hasDiagrams"],
+  "capabilities": [
+    "hasCode",
+    "hasVersions",
+    "hasInterview",
+    "hasProject",
+    "hasDiagrams"
+  ],
   "fonts": {
     "contentFamily": "Vazirmatn",
     "files": [
@@ -22,10 +34,53 @@
       "fonts/Vazirmatn-Bold.ttf"
     ]
   },
-  "modules": ["java-p1", "java-p2", "java-p3", "java-p4", "java-p5", "java-p6"],
   "dependencies": [],
   "update": {
     "channel": "stable",
-    "source": { "kind": "git", "url": "https://github.com/sudoitir/mentora-course-java", "private": false }
-  }
+    "source": {
+      "kind": "git",
+      "url": "https://github.com/sudoitir/mentora-course-java",
+      "private": false
+    }
+  },
+  "defaultLocale": "fa",
+  "locales": [
+    {
+      "locale": "fa",
+      "title": "جاوا از صفر تا استخدام",
+      "summary": "مسیری پروژه‌محور برای یادگیری جاوا، از مبانی تا توسعه‌ی حرفه‌ای با اسپرینگ بوت.",
+      "readingDirection": "rtl",
+      "modules": [
+        "java-p1",
+        "java-p2",
+        "java-p3",
+        "java-p4",
+        "java-p5",
+        "java-p6"
+      ],
+      "fonts": {
+        "contentFamily": "Vazirmatn",
+        "files": [
+          "fonts/Vazirmatn-Regular.ttf",
+          "fonts/Vazirmatn-Medium.ttf",
+          "fonts/Vazirmatn-SemiBold.ttf",
+          "fonts/Vazirmatn-Bold.ttf"
+        ]
+      }
+    },
+    {
+      "locale": "en",
+      "title": "Java from Zero to Hired",
+      "summary": "A project-based path from Java fundamentals to professional backend development with Spring Boot.",
+      "readingDirection": "ltr",
+      "modules": [
+        "en/java-p1",
+        "en/java-p2",
+        "en/java-p3",
+        "en/java-p4",
+        "en/java-p5",
+        "en/java-p6"
+      ]
+    }
+  ]
 }

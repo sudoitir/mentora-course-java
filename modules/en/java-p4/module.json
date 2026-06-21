@@ -1,0 +1,30 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "java-p4",
+  "index": 4,
+  "title": "Databases and SQL",
+  "summary": "Persisting data with relational databases, SQL, and Java database access.",
+  "icon": "cylinder.split.1x2",
+  "lessons": [
+    {
+      "id": "java-w17",
+      "number": 17,
+      "title": "Relational Database Fundamentals"
+    },
+    {
+      "id": "java-w18",
+      "number": 18,
+      "title": "SQL: Writing Queries"
+    },
+    {
+      "id": "java-w19",
+      "number": 19,
+      "title": "JDBC: Connecting Java to Data"
+    },
+    {
+      "id": "java-w20",
+      "number": 20,
+      "title": "Data Design and Database Project"
+    }
+  ]
+}

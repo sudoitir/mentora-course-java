@@ -1,0 +1,70 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "java-p5",
+  "index": 5,
+  "title": "Spring Boot",
+  "summary": "Building real services and APIs with Spring Boot 4 and its ecosystem.",
+  "icon": "leaf",
+  "lessons": [
+    {
+      "id": "java-w21",
+      "number": 21,
+      "title": "Spring Boot and Dependency Injection"
+    },
+    {
+      "id": "java-w22",
+      "number": 22,
+      "title": "Building Your First REST API"
+    },
+    {
+      "id": "java-w23",
+      "number": 23,
+      "title": "Controllers and Routing"
+    },
+    {
+      "id": "java-w24",
+      "number": 24,
+      "title": "Service Layer and Business Logic"
+    },
+    {
+      "id": "java-w25",
+      "number": 25,
+      "title": "Spring Data JPA"
+    },
+    {
+      "id": "java-w26",
+      "number": 26,
+      "title": "Validation and Error Handling"
+    },
+    {
+      "id": "java-w27",
+      "number": 27,
+      "title": "Authentication and Security"
+    },
+    {
+      "id": "java-w28",
+      "number": 28,
+      "title": "Testing in Spring Boot"
+    },
+    {
+      "id": "java-w29",
+      "number": 29,
+      "title": "Configuration and Profiles"
+    },
+    {
+      "id": "java-w30",
+      "number": 30,
+      "title": "Logging and Monitoring"
+    },
+    {
+      "id": "java-w31",
+      "number": 31,
+      "title": "API Documentation and Versioning"
+    },
+    {
+      "id": "java-w32",
+      "number": 32,
+      "title": "Deployment and Containerization"
+    }
+  ]
+}

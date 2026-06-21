@@ -1,0 +1,40 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "java-p3",
+  "index": 3,
+  "title": "Professional Tools",
+  "summary": "Collections, generics, exceptions, testing, and everyday developer tools.",
+  "icon": "wrench.and.screwdriver",
+  "lessons": [
+    {
+      "id": "java-w11",
+      "number": 11,
+      "title": "Arrays and Strings"
+    },
+    {
+      "id": "java-w12",
+      "number": 12,
+      "title": "Collections: List, Set, and Map"
+    },
+    {
+      "id": "java-w13",
+      "number": 13,
+      "title": "Generics"
+    },
+    {
+      "id": "java-w14",
+      "number": 14,
+      "title": "Exceptions and Error Handling"
+    },
+    {
+      "id": "java-w15",
+      "number": 15,
+      "title": "Lambda Expressions and Stream API"
+    },
+    {
+      "id": "java-w16",
+      "number": 16,
+      "title": "Testing with JUnit"
+    }
+  ]
+}

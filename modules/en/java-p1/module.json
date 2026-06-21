@@ -1,0 +1,30 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "java-p1",
+  "index": 1,
+  "title": "Foundations",
+  "summary": "First steps in Java: variables, decisions, loops, and writing small programs.",
+  "icon": "square.stack.3d.up",
+  "lessons": [
+    {
+      "id": "java-w01",
+      "number": 1,
+      "title": "Your First Program and Compile vs Run"
+    },
+    {
+      "id": "java-w02",
+      "number": 2,
+      "title": "Variables and Data Types"
+    },
+    {
+      "id": "java-w03",
+      "number": 3,
+      "title": "Operators and Decisions with Conditionals"
+    },
+    {
+      "id": "java-w04",
+      "number": 4,
+      "title": "Loops and Repetition"
+    }
+  ]
+}

@@ -1,0 +1,395 @@
+{
+  "id": "java-w01",
+  "number": 1,
+  "phaseID": "java-p1",
+  "title": "Your First Program and Compile vs Run",
+  "prerequisite": "This is the first week; no prerequisite except curiosity.",
+  "welcome": "Welcome, {name}. This week you make Java answer you for the first time. Do not wait until every keyword feels familiar. Build first, watch the output, then we will put names on the pieces.",
+  "objectives": [
+    "Install and verify a JDK and a code editor.",
+    "Write your first Java program and print a clear message to the terminal.",
+    "Explain the difference between compiling with javac and running with java.",
+    "Recognize the class, main method, and print statement in a tiny Java program.",
+    "Read the first useful line of a beginner compiler error without panic."
+  ],
+  "capabilities": [
+    "hasCode",
+    "hasVersions",
+    "hasInterview",
+    "hasProject",
+    "hasDiagrams"
+  ],
+  "lessons": [
+    {
+      "id": "l1",
+      "title": "Your first Java sentence: Hello, world",
+      "blocks": [
+        {
+          "id": "l1-analogy",
+          "type": "analogy",
+          "text": "A first program is like your first sentence in a new language. You do not need the full grammar yet; you say one simple line and get a reply. Here, the reply is text printed by your own program."
+        },
+        {
+          "id": "l1-diagram",
+          "type": "diagram",
+          "diagram": "nested",
+          "layers": [
+            {
+              "label": "class Main",
+              "note": "The house where the code lives"
+            },
+            {
+              "label": "main(...)",
+              "note": "The front door where execution starts"
+            },
+            {
+              "label": "println(...)",
+              "note": "The instruction that prints a line"
+            }
+          ]
+        },
+        {
+          "id": "l1-p1",
+          "type": "prose",
+          "text": "Start with a complete program. Type it exactly once, run it, and only then slow down to inspect it."
+        },
+        {
+          "id": "l1-code",
+          "type": "code",
+          "lang": "java",
+          "source": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, world!\");\n    }\n}",
+          "output": "Hello, world!",
+          "caption": "Main.java"
+        },
+        {
+          "id": "l1-p2",
+          "type": "prose",
+          "text": "Three pieces matter today. `class Main` declares a class; in Java, code lives inside classes. `main` is the method where the JVM starts your program. `System.out.println(...)` prints the text inside the quotes and moves to the next line. Keywords such as public, static, and void will become clear later. For now, protect the structure and change the message."
+        },
+        {
+          "id": "l1-worked",
+          "type": "worked-example",
+          "full": "Complete version:\n\npublic class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, world!\");\n    }\n}",
+          "partial": "Fill the print instruction:\n\npublic class Main {\n    public static void main(String[] args) {\n        System.out.________(\"Hello, world!\");\n    }\n}",
+          "solo": "From memory, write a complete Java program that prints one sentence you choose."
+        }
+      ]
+    },
+    {
+      "id": "l2",
+      "title": "Compile vs run: how Java comes alive",
+      "blocks": [
+        {
+          "id": "l2-analogy",
+          "type": "analogy",
+          "text": "Imagine writing stage directions for an actor. First the script is translated into a form the crew can use; then the actor performs it. Compiling is the translation step. Running is the performance."
+        },
+        {
+          "id": "l2-diagram",
+          "type": "diagram",
+          "diagram": "flow",
+          "steps": [
+            {
+              "title": "Main.java",
+              "subtitle": "Your source code",
+              "symbol": "doc.text"
+            },
+            {
+              "title": "javac",
+              "subtitle": "Compile",
+              "symbol": "gearshape"
+            },
+            {
+              "title": "Main.class",
+              "subtitle": "Bytecode",
+              "symbol": "shippingbox"
+            },
+            {
+              "title": "JVM",
+              "subtitle": "Run",
+              "symbol": "cpu"
+            },
+            {
+              "title": "Output",
+              "subtitle": "Hello, world!",
+              "symbol": "text.bubble"
+            }
+          ]
+        },
+        {
+          "id": "l2-p1",
+          "type": "prose",
+          "text": "Java normally has two visible steps. First, `javac Main.java` compiles your human-readable source file into `Main.class`, a bytecode file. Second, `java Main` asks the JVM to run that bytecode. The JVM is why the same compiled program can run on macOS, Windows, and Linux when each system has a compatible Java runtime."
+        },
+        {
+          "id": "l2-code",
+          "type": "code",
+          "lang": "bash",
+          "source": "javac Main.java   # compile: create Main.class\njava Main         # run: ask the JVM to execute it",
+          "output": "Hello, world!",
+          "caption": "Terminal"
+        },
+        {
+          "id": "l2-worked",
+          "type": "worked-example",
+          "full": "Run the steps in order: `javac Main.java`, then `java Main`. The first command produces bytecode; the second command prints your message.",
+          "partial": "Complete the order: first ____ Main.java, then ____ Main.",
+          "solo": "Without looking, write the two terminal commands for compiling and running Main.java."
+        }
+      ]
+    }
+  ],
+  "recall": [
+    {
+      "prompt": "Write the print statement that outputs: I am learning Java.",
+      "answer": "System.out.println(\"I am learning Java.\");\n\nThe text inside the quotes is printed exactly."
+    },
+    {
+      "prompt": "Predict the output:\nSystem.out.println(\"A\");\nSystem.out.println(\"B\");",
+      "answer": "Two separate lines:\n\nA\nB\n\n`println` prints and then moves to the next line."
+    },
+    {
+      "prompt": "Explain compile vs run in your own words.",
+      "answer": "Compile means translate source code into bytecode with javac. Run means execute that bytecode on the JVM with java."
+    }
+  ],
+  "practice": {
+    "kind": "project",
+    "brief": "Build a personal greeting card: a program that prints a three-line welcome message. The point is to become comfortable with class structure, main, and multiple println calls.",
+    "expectedOutput": "Hello, world!\nThis is my first Java program.\nWelcome to Java!",
+    "tables": [
+      {
+        "caption": "Program pieces",
+        "headers": [
+          "Name",
+          "Role"
+        ],
+        "rows": [
+          [
+            "Main",
+            "The public class that holds this first program."
+          ],
+          [
+            "main",
+            "The method where execution starts."
+          ],
+          [
+            "System.out.println",
+            "Prints one line of text."
+          ]
+        ]
+      }
+    ],
+    "steps": [
+      "Create a file named Main.java.",
+      "Write the Main class and the main method.",
+      "Add three println statements, one for each output line.",
+      "Compile with javac Main.java.",
+      "Run with java Main and compare the output with the expected output."
+    ]
+  },
+  "flashcards": [
+    {
+      "front": "Which method prints a line of text?",
+      "back": "System.out.println(...)"
+    },
+    {
+      "front": "What symbol ends most Java statements?",
+      "back": "A semicolon: ;"
+    },
+    {
+      "front": "What command compiles Main.java?",
+      "back": "javac Main.java"
+    },
+    {
+      "front": "What command runs the Main class?",
+      "back": "java Main"
+    },
+    {
+      "front": "What does JVM stand for?",
+      "back": "Java Virtual Machine"
+    },
+    {
+      "front": "Where does a Java application start?",
+      "back": "At the main method"
+    },
+    {
+      "front": "What file does javac usually produce from Main.java?",
+      "back": "Main.class"
+    },
+    {
+      "front": "What must match a public Java class name?",
+      "back": "The file name"
+    }
+  ],
+  "quiz": [
+    {
+      "q": "Which statement prints `Hello` and moves to the next line?",
+      "options": [
+        "System.out.print(\"Hello\");",
+        "System.out.println(\"Hello\");",
+        "print(\"Hello\")",
+        "Console.log(\"Hello\");"
+      ],
+      "answerIndex": 1,
+      "explain": "println prints a line and then advances to the next line."
+    },
+    {
+      "q": "What is javac responsible for?",
+      "options": [
+        "Running bytecode",
+        "Compiling source code into bytecode",
+        "Installing Java",
+        "Deleting class files"
+      ],
+      "answerIndex": 1,
+      "explain": "javac is the Java compiler."
+    },
+    {
+      "q": "What runs Java bytecode?",
+      "options": [
+        "The JVM",
+        "The text editor",
+        "The README",
+        "The package manager"
+      ],
+      "answerIndex": 0,
+      "explain": "The Java Virtual Machine executes bytecode."
+    },
+    {
+      "q": "Which method is the program entry point?",
+      "options": [
+        "start",
+        "run",
+        "main",
+        "println"
+      ],
+      "answerIndex": 2,
+      "explain": "The JVM starts application execution at main."
+    },
+    {
+      "q": "Why does this week’s code work on Java 8+?",
+      "options": [
+        "It uses only long-standing Java features",
+        "Java 8 is newer than Java 25",
+        "It needs Spring Boot",
+        "It runs in a browser"
+      ],
+      "answerIndex": 0,
+      "explain": "Classes, main, and println have existed since early Java."
+    },
+    {
+      "q": "What is the usual output of compiling Main.java?",
+      "options": [
+        "Main.class",
+        "Main.zip",
+        "Main.html",
+        "Main.sql"
+      ],
+      "answerIndex": 0,
+      "explain": "javac writes bytecode to a .class file."
+    }
+  ],
+  "checkpoints": [
+    {
+      "prompt": "Send a screenshot of your `Hello, world!` output.",
+      "rubric": "The output is visible and comes from running the Java program, not just editing the file.",
+      "acceptsPhoto": true,
+      "acceptsCodePaste": true
+    },
+    {
+      "prompt": "Paste the output of `java -version` so you can confirm your JDK is installed.",
+      "rubric": "The output includes a Java version and runtime/vendor information.",
+      "acceptsPhoto": false,
+      "acceptsCodePaste": true
+    }
+  ],
+  "glossary": [
+    {
+      "term": "Compile",
+      "translit": "compile",
+      "definition": "Translate source code into bytecode. In this week, javac does it."
+    },
+    {
+      "term": "Run",
+      "translit": "run",
+      "definition": "Execute bytecode on the JVM using the java command."
+    },
+    {
+      "term": "Bytecode",
+      "translit": "bytecode",
+      "definition": "The .class instruction format that the JVM understands."
+    },
+    {
+      "term": "JVM",
+      "translit": "Java Virtual Machine",
+      "definition": "The runtime that executes Java bytecode on each operating system."
+    },
+    {
+      "term": "Class",
+      "translit": "class",
+      "definition": "A named container where Java code lives."
+    },
+    {
+      "term": "main method",
+      "translit": "main method",
+      "definition": "The entry point where a Java application begins."
+    }
+  ],
+  "nextWeekHook": "{name}, now that your program can speak, next week we give it memory: variables and data types.",
+  "challenges": [
+    "Add a blank line between greeting lines using an empty println.",
+    "Replace one println with print and observe how the output changes."
+  ],
+  "bugHunt": [
+    {
+      "code": {
+        "lang": "java",
+        "source": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, world!\")\n    }\n}",
+        "caption": "Main.java"
+      },
+      "problem": "The print statement is missing its semicolon. Java statements normally end with `;`."
+    },
+    {
+      "code": {
+        "lang": "java",
+        "source": "public class Main {\n    public static void main(String[] args) {\n        System.out.printline(\"Hello, world!\");\n    }\n}",
+        "caption": "Main.java"
+      },
+      "problem": "The method name is misspelled. Java has `println`, not `printline`."
+    }
+  ],
+  "goldenTips": [
+    "Treat the first compiler error as a clue, not a verdict.",
+    "Keep the file name and public class name identical: Main.java contains public class Main.",
+    "Change one thing at a time when you are learning a new syntax shape."
+  ],
+  "interview": [
+    {
+      "q": "What is the difference between compiling and running Java code?",
+      "a": "Compiling with javac translates .java source into .class bytecode. Running with java asks the JVM to execute that bytecode."
+    },
+    {
+      "q": "Why does Java use a JVM?",
+      "a": "The JVM runs bytecode on different operating systems, which gives Java its portable runtime model."
+    },
+    {
+      "q": "What is the signature of the main method and why does it matter?",
+      "a": "The usual signature is public static void main(String[] args). The JVM looks for this method as the application entry point."
+    }
+  ],
+  "versionNotes": [
+    {
+      "since": "Java 10",
+      "what": "Local variable type inference with var",
+      "oldWay": "String message = \"Hello\";",
+      "newWay": "var message = \"Hello\"; The beginner code this week avoids var so it remains familiar on Java 8+."
+    },
+    {
+      "since": "Java 15",
+      "what": "Text blocks for multi-line strings",
+      "oldWay": "Use repeated strings and newline escapes for multi-line output.",
+      "newWay": "Use triple-quoted text blocks for readable multi-line strings when your runtime supports them."
+    }
+  ]
+}

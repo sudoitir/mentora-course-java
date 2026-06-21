@@ -1,0 +1,50 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "java-p6",
+  "index": 6,
+  "title": "Capstone and Career",
+  "summary": "A complete capstone project, interview preparation, and the first steps toward the job market.",
+  "icon": "flag.checkered",
+  "lessons": [
+    {
+      "id": "java-w33",
+      "number": 33,
+      "title": "Capstone Architecture"
+    },
+    {
+      "id": "java-w34",
+      "number": 34,
+      "title": "Implementing the Project Core"
+    },
+    {
+      "id": "java-w35",
+      "number": 35,
+      "title": "Completing Features and Integration"
+    },
+    {
+      "id": "java-w36",
+      "number": 36,
+      "title": "Optimization and Code Quality"
+    },
+    {
+      "id": "java-w37",
+      "number": 37,
+      "title": "Algorithms and Data Structures for Interviews"
+    },
+    {
+      "id": "java-w38",
+      "number": 38,
+      "title": "Technical Interview Preparation"
+    },
+    {
+      "id": "java-w39",
+      "number": 39,
+      "title": "Resume, GitHub, and Professional Presence"
+    },
+    {
+      "id": "java-w40",
+      "number": 40,
+      "title": "Final Review and Comprehensive Interview"
+    }
+  ]
+}
