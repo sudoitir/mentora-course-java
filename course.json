@@ -1,5 +1,5 @@
 {
-  "schemaVersion": "1.1.0",
+  "schemaVersion": "1.2.0",
   "id": "mentora.java",
   "version": "1.0.0",
   "minAppVersion": "1.0.0",
@@ -25,6 +25,417 @@
     "hasProject",
     "hasDiagrams"
   ],
+  "gamification": {
+    "levels": [
+      {
+        "threshold": 0,
+        "title": {
+          "fa": "تازه‌کار",
+          "en": "Beginner"
+        },
+        "symbol": "leaf.fill"
+      },
+      {
+        "threshold": 150,
+        "title": {
+          "fa": "جوینده",
+          "en": "Seeker"
+        }
+      },
+      {
+        "threshold": 450,
+        "title": {
+          "fa": "کدنویسِ نوآموز",
+          "en": "Novice Coder"
+        }
+      },
+      {
+        "threshold": 1000,
+        "title": {
+          "fa": "برنامه‌نویسِ مبتدی",
+          "en": "Beginner Programmer"
+        }
+      },
+      {
+        "threshold": 2000,
+        "title": {
+          "fa": "شیءگرااندیش",
+          "en": "Object-Oriented Thinker"
+        }
+      },
+      {
+        "threshold": 3500,
+        "title": {
+          "fa": "حل‌کننده‌ی مسئله",
+          "en": "Problem Solver"
+        }
+      },
+      {
+        "threshold": 5500,
+        "title": {
+          "fa": "توسعه‌دهنده‌ی نوپا",
+          "en": "Growing Developer"
+        }
+      },
+      {
+        "threshold": 8000,
+        "title": {
+          "fa": "مهندسِ در حال رشد",
+          "en": "Engineer in Growth"
+        }
+      },
+      {
+        "threshold": 11000,
+        "title": {
+          "fa": "سازنده‌ی باطمأنینه",
+          "en": "Deliberate Builder"
+        }
+      },
+      {
+        "threshold": 14500,
+        "title": {
+          "fa": "توسعه‌دهنده‌ی مستقل",
+          "en": "Independent Developer"
+        }
+      },
+      {
+        "threshold": 18000,
+        "title": {
+          "fa": "آماده‌ی مصاحبه",
+          "en": "Interview Ready"
+        }
+      },
+      {
+        "threshold": 22000,
+        "title": {
+          "fa": "توسعه‌دهنده‌ی جونیور",
+          "en": "Junior Developer"
+        },
+        "symbol": "crown.fill"
+      }
+    ],
+    "badges": [
+      {
+        "id": "practice/1",
+        "name": {
+          "fa": "اولین پروژه",
+          "en": "First Project"
+        },
+        "detail": {
+          "fa": "اولین پروژه‌ات را ساختی.",
+          "en": "You built your first project."
+        },
+        "symbol": "shippingbox.fill",
+        "criterion": {
+          "type": "practicesCompleted",
+          "value": 1
+        }
+      },
+      {
+        "id": "practice/5",
+        "name": {
+          "fa": "دست‌به‌کار",
+          "en": "Hands-On"
+        },
+        "detail": {
+          "fa": "پنج پروژه ساختی.",
+          "en": "You built five projects."
+        },
+        "symbol": "hammer.fill",
+        "criterion": {
+          "type": "practicesCompleted",
+          "value": 5
+        }
+      },
+      {
+        "id": "practice/10",
+        "name": {
+          "fa": "سازنده",
+          "en": "Builder"
+        },
+        "detail": {
+          "fa": "ده پروژه ساختی.",
+          "en": "You built ten projects."
+        },
+        "symbol": "wrench.and.screwdriver.fill",
+        "criterion": {
+          "type": "practicesCompleted",
+          "value": 10
+        }
+      },
+      {
+        "id": "practice/20",
+        "name": {
+          "fa": "معمار",
+          "en": "Architect"
+        },
+        "detail": {
+          "fa": "بیست پروژه ساختی.",
+          "en": "You built twenty projects."
+        },
+        "symbol": "building.2.fill",
+        "criterion": {
+          "type": "practicesCompleted",
+          "value": 20
+        }
+      },
+      {
+        "id": "practice/40",
+        "name": {
+          "fa": "استادِ ساخت",
+          "en": "Master Builder"
+        },
+        "detail": {
+          "fa": "هر چهل پروژه‌ی دوره را ساختی.",
+          "en": "You built all forty course projects."
+        },
+        "symbol": "crown.fill",
+        "criterion": {
+          "type": "practicesCompleted",
+          "value": 40
+        }
+      },
+      {
+        "id": "streak/7",
+        "name": {
+          "fa": "هفت روزِ پیاپی",
+          "en": "Seven-Day Streak"
+        },
+        "detail": {
+          "fa": "هفت روز پشت‌سرهم یاد گرفتی.",
+          "en": "Seven days in a row."
+        },
+        "symbol": "flame.fill",
+        "criterion": {
+          "type": "streakReached",
+          "value": 7
+        }
+      },
+      {
+        "id": "streak/30",
+        "name": {
+          "fa": "یک ماهِ استوار",
+          "en": "Steady Month"
+        },
+        "detail": {
+          "fa": "سی روز پشت‌سرهم یاد گرفتی.",
+          "en": "Thirty days in a row."
+        },
+        "symbol": "flame.circle.fill",
+        "criterion": {
+          "type": "streakReached",
+          "value": 30
+        }
+      },
+      {
+        "id": "streak/100",
+        "name": {
+          "fa": "صد روزِ افسانه‌ای",
+          "en": "Legendary Hundred"
+        },
+        "detail": {
+          "fa": "صد روز پشت‌سرهم یاد گرفتی.",
+          "en": "One hundred days in a row."
+        },
+        "symbol": "trophy.fill",
+        "criterion": {
+          "type": "streakReached",
+          "value": 100
+        }
+      },
+      {
+        "id": "quiz/perfect-1",
+        "name": {
+          "fa": "نمره‌ی کامل",
+          "en": "Perfect Score"
+        },
+        "detail": {
+          "fa": "یک آزمون را بی‌نقص پاسخ دادی.",
+          "en": "You answered one quiz perfectly."
+        },
+        "symbol": "rosette",
+        "criterion": {
+          "type": "perfectQuizzes",
+          "value": 1
+        }
+      },
+      {
+        "id": "quiz/perfect-10",
+        "name": {
+          "fa": "آزمون‌گریزناپذیر",
+          "en": "Quiz Unstoppable"
+        },
+        "detail": {
+          "fa": "ده آزمون را بی‌نقص پاسخ دادی.",
+          "en": "You answered ten quizzes perfectly."
+        },
+        "symbol": "star.circle.fill",
+        "criterion": {
+          "type": "perfectQuizzes",
+          "value": 10
+        }
+      },
+      {
+        "id": "comeback",
+        "name": {
+          "fa": "بازگشت",
+          "en": "Comeback"
+        },
+        "detail": {
+          "fa": "پس از مدتی دوری برگشتی.",
+          "en": "You returned after some time away."
+        },
+        "symbol": "arrow.uturn.up.circle.fill",
+        "criterion": {
+          "type": "comeback"
+        }
+      },
+      {
+        "id": "units/1",
+        "name": {
+          "fa": "گامِ نخست",
+          "en": "First Step"
+        },
+        "detail": {
+          "fa": "اولین هفته را کامل کردی.",
+          "en": "You completed the first week."
+        },
+        "symbol": "flag.fill",
+        "criterion": {
+          "type": "unitsCompleted",
+          "value": 1
+        }
+      },
+      {
+        "id": "units/20",
+        "name": {
+          "fa": "نیمه‌ی راه",
+          "en": "Halfway There"
+        },
+        "detail": {
+          "fa": "بیست هفته را کامل کردی.",
+          "en": "You completed twenty weeks."
+        },
+        "symbol": "flag.2.crossed.fill",
+        "criterion": {
+          "type": "unitsCompleted",
+          "value": 20
+        }
+      },
+      {
+        "id": "units/40",
+        "name": {
+          "fa": "خطِ پایان",
+          "en": "Finish Line"
+        },
+        "detail": {
+          "fa": "هر چهل هفته را کامل کردی.",
+          "en": "You completed all forty weeks."
+        },
+        "symbol": "flag.checkered",
+        "criterion": {
+          "type": "unitsCompleted",
+          "value": 40
+        }
+      },
+      {
+        "id": "module/java-p1",
+        "name": {
+          "fa": "استادِ «بنیادها»",
+          "en": "Foundations Master"
+        },
+        "detail": {
+          "fa": "همه‌ی هفته‌های فاز «بنیادها» را کامل کردی.",
+          "en": "You completed every week in “Foundations”."
+        },
+        "symbol": "checkmark.seal.fill",
+        "criterion": {
+          "type": "moduleCompleted",
+          "module": "java-p1"
+        }
+      },
+      {
+        "id": "module/java-p2",
+        "name": {
+          "fa": "استادِ «شیء‌گرایی»",
+          "en": "Object-Oriented Programming Master"
+        },
+        "detail": {
+          "fa": "همه‌ی هفته‌های فاز «شیء‌گرایی» را کامل کردی.",
+          "en": "You completed every week in “Object-Oriented Programming”."
+        },
+        "symbol": "checkmark.seal.fill",
+        "criterion": {
+          "type": "moduleCompleted",
+          "module": "java-p2"
+        }
+      },
+      {
+        "id": "module/java-p3",
+        "name": {
+          "fa": "استادِ «ابزارهای حرفه‌ای»",
+          "en": "Professional Tools Master"
+        },
+        "detail": {
+          "fa": "همه‌ی هفته‌های فاز «ابزارهای حرفه‌ای» را کامل کردی.",
+          "en": "You completed every week in “Professional Tools”."
+        },
+        "symbol": "checkmark.seal.fill",
+        "criterion": {
+          "type": "moduleCompleted",
+          "module": "java-p3"
+        }
+      },
+      {
+        "id": "module/java-p4",
+        "name": {
+          "fa": "استادِ «پایگاه‌داده و SQL»",
+          "en": "Databases and SQL Master"
+        },
+        "detail": {
+          "fa": "همه‌ی هفته‌های فاز «پایگاه‌داده و SQL» را کامل کردی.",
+          "en": "You completed every week in “Databases and SQL”."
+        },
+        "symbol": "checkmark.seal.fill",
+        "criterion": {
+          "type": "moduleCompleted",
+          "module": "java-p4"
+        }
+      },
+      {
+        "id": "module/java-p5",
+        "name": {
+          "fa": "استادِ «اسپرینگ بوت»",
+          "en": "Spring Boot Master"
+        },
+        "detail": {
+          "fa": "همه‌ی هفته‌های فاز «اسپرینگ بوت» را کامل کردی.",
+          "en": "You completed every week in “Spring Boot”."
+        },
+        "symbol": "checkmark.seal.fill",
+        "criterion": {
+          "type": "moduleCompleted",
+          "module": "java-p5"
+        }
+      },
+      {
+        "id": "module/java-p6",
+        "name": {
+          "fa": "استادِ «پروژه‌ی پایانی و حرفه»",
+          "en": "Capstone and Career Master"
+        },
+        "detail": {
+          "fa": "همه‌ی هفته‌های فاز «پروژه‌ی پایانی و حرفه» را کامل کردی.",
+          "en": "You completed every week in “Capstone and Career”."
+        },
+        "symbol": "checkmark.seal.fill",
+        "criterion": {
+          "type": "moduleCompleted",
+          "module": "java-p6"
+        }
+      }
+    ]
+  },
   "fonts": {
     "contentFamily": "Vazirmatn",
     "files": [

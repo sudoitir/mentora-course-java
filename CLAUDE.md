@@ -31,6 +31,10 @@ This repo and the app repo evolve together:
 - **v2 schema (block-based, capability-driven).** Lessons are `lessons[].blocks[]` (flat `type`-keyed blocks);
   the week/course declare a `capabilities` set and Java-specific sections (code, version notes, interview) are
   validated only when declared. See Mentora `CONTENT_SCHEMA.md` and the `course-author` skill.
+- **Course-defined gamification (`schemaVersion` 1.2.0).** `course.json` carries a top-level `gamification`
+  block (12-level Java career arc + badges, per-locale `{fa,en}` titles, generic criteria like
+  `practicesCompleted`/`unitsCompleted`/`moduleCompleted`). Levels/badges are no longer hardcoded in the app;
+  omitting the block falls back to Mentora's generic default. Schema: Mentora `docs/COURSE_ECOSYSTEM.md` §4.
 
 ## Layout
 
