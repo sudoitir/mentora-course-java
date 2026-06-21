@@ -26,8 +26,11 @@ This repo and the app repo evolve together:
 - **Change protocol:** **schema changes land in Mentora first** (bump `schemaVersion`, update the spec +
   the loader/validator), **then** content here is updated to track the new `schemaVersion`. Never invent a
   field here that the spec does not define; if content needs a new field, add it to the spec first.
-- When you change content here in a way that needs app support (a new `visual` kind, a new `resource.kind`),
+- When you change content here in a way that needs app support (a new block `type`, a new `DiagramKind`),
   open a corresponding change in Mentora.
+- **v2 schema (block-based, capability-driven).** Lessons are `lessons[].blocks[]` (flat `type`-keyed blocks);
+  the week/course declare a `capabilities` set and Java-specific sections (code, version notes, interview) are
+  validated only when declared. See Mentora `CONTENT_SCHEMA.md` and the `course-author` skill.
 
 ## Layout
 
@@ -46,8 +49,8 @@ assets/{images,diagrams,pdf,video}/
 - **Persian, RTL, exceptionally fluent**, warm, second-person prose addressed to the learner. **Code is
   LTR** (English keywords, Persian comments) with **authored `output`** (no real execution offline).
 - **Never hardcode the learner's name** — use the `{name}` token, sparingly (welcome / next-week hook).
-- **Build first, understand why later**; analogy + a typed `visual`; faded worked examples; SRS flashcards;
-  active-recall quizzes; ☕ version notes (runs on Java 8+); 🎤 interview corner.
+- **Build first, understand why later**; an `analogy` block + a `diagram` block; faded `worked-example`;
+  SRS flashcards; active-recall quizzes; ☕ version notes (runs on Java 8+); 🎤 interview corner.
 - **Target Java 25 / Spring Boot 4 (`jakarta.*`)** but teach so code runs on Java 8+; verify APIs via
   Context7 MCP. Note Spring Boot 3 → 4 differences where helpful.
 - Every `lessons/<id>.json` must satisfy the **`WeekValidator`** counts (objectives ≥ 3, lessons ≥ 2,

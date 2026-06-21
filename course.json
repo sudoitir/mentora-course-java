@@ -12,6 +12,7 @@
   "categories": ["programming"],
   "author": { "id": "mentora", "name": "Mentora" },
   "cover": "assets/images/cover.png",
+  "capabilities": ["hasCode", "hasVersions", "hasInterview", "hasProject", "hasDiagrams"],
   "fonts": {
     "contentFamily": "Vazirmatn",
     "files": [
